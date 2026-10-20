@@ -10,11 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" href="images/logo-icon.png">
-  <meta property="og:image" content="images/hero.webp">
-  <link rel="preload" as="image" href="images/hero.webp">
+  <meta property="og:image" content="https://mathewservicesllc.com/images/hero-lawn.webp">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1664289342468-fa99588e60b8?auto=format&fit=crop&w=1920&q=70">
   <!-- META PIXEL: se agregará aquí cuando creemos el píxel de Mathew Services -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LandscapingBusiness","name":"Mathew Services LLC","url":"https://mathewservicesllc.com/","telephone":"+1-405-613-6405","email":"Mathewservicesllc@gmail.com","image":"https://mathewservicesllc.com/images/hero.webp","logo":"https://mathewservicesllc.com/images/logo.png","hasMap":"https://maps.app.goo.gl/o6MpChsnEwxm1Rh59","areaServed":["Oklahoma City","Edmond","Moore","Norman","Midwest City","Del City","Yukon","Mustang","Bethany","Warr Acres","Nichols Hills","The Village","Choctaw"],"address":{"@type":"PostalAddress","addressLocality":"Oklahoma City","addressRegion":"OK","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"07:00","closes":"15:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"17"},"knowsLanguage":["en","es"]}
+  {"@context":"https://schema.org","@type":"LandscapingBusiness","name":"Mathew Services LLC","url":"https://mathewservicesllc.com/","telephone":"+1-405-613-6405","email":"Mathewservicesllc@gmail.com","image":"https://mathewservicesllc.com/images/hero-lawn.webp","logo":"https://mathewservicesllc.com/images/logo.png","hasMap":"https://maps.app.goo.gl/o6MpChsnEwxm1Rh59","areaServed":["Oklahoma City","Edmond","Moore","Norman","Midwest City","Del City","Yukon","Mustang","Bethany","Warr Acres","Nichols Hills","The Village","Choctaw"],"address":{"@type":"PostalAddress","addressLocality":"Oklahoma City","addressRegion":"OK","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"17:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"17"},"knowsLanguage":["en","es"]}
   </script>
 </head>
 <body>
@@ -22,7 +22,7 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a href="#top" class="brand" aria-label="Mathew Services LLC">
-      <img src="images/logo-icon.png" alt="" width="84" height="41">
+      <img src="images/logo-icon.png" alt="" width="78" height="42">
       <span class="brand-text">Mathew Services<small>Landscape &amp; Concrete</small></span>
     </a>
     <nav class="main-nav" aria-label="Main">
@@ -40,25 +40,61 @@
 
 <main id="top">
 
-  <section class="hero">
-    <div class="hero-media" aria-hidden="true">
-      <video autoplay muted loop playsinline preload="metadata" poster="images/hero.webp">
-        <source src="video/hero.mp4" type="video/mp4">
-      </video>
+  <!-- HERO SLIDER. Slides with data-until disappear automatically after that date (Christmas promo ends Nov 15).
+       Christmas photos: Unsplash (Gautam Krishnan, Bob Ricca), temporary until we have Mathew's own night photos. -->
+  <section class="hero hero-slider" aria-roledescription="carousel" aria-label="Featured">
+    <div class="slides">
+
+      <article class="slide is-active slide-xmas" data-until="2026-11-16" aria-roledescription="slide">
+        <div class="slide-bg" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1664289342468-fa99588e60b8?auto=format&fit=crop&w=1920&q=70')"></div>
+        <div class="wrap hero-inner">
+          <p class="promo-badge"><span>15% OFF</span> <span data-i18n="xmas.badge">Early-bird booking</span></p>
+          <h2 class="h1" data-i18n="xmas.title">Christmas lights, installed for you</h2>
+          <p class="lead" data-i18n="xmas.lead">Book your Christmas light installation by November 15 and save 15%. Our crew handles everything — you just enjoy the glow.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-accent" href="#contact" data-service="xmas" data-i18n="xmas.cta">Book now &amp; save 15%</a>
+            <a class="btn btn-ghost" href="tel:+14056136405"><span data-i18n="cta.call">Call</span> 405-613-6405</a>
+          </div>
+          <p class="fine" data-i18n="xmas.fine">Offer valid for installations booked through November 15, 2026.</p>
+        </div>
+      </article>
+
+      <article class="slide" aria-roledescription="slide">
+        <div class="slide-bg" aria-hidden="true" style="background-image:url('images/hero-lawn.webp')"></div>
+        <div class="wrap hero-inner">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Oklahoma City · Landscape &amp; Concrete</p>
+          <h1 data-i18n="hero.title">Let's beautify your space together</h1>
+          <p class="lead" data-i18n="hero.lead">Expert landscaping, lawn care, concrete and tree services — done on time, with quality craftsmanship and honest prices.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-accent" href="#contact" data-i18n="cta.estimate">Get a free estimate</a>
+            <a class="btn btn-ghost" href="sms:+14056136405" data-i18n="cta.text">Text us</a>
+          </div>
+          <ul class="trust">
+            <li><strong>5.0 ★</strong> <span data-i18n="trust.google">17 Google reviews</span></li>
+            <li data-i18n="trust.free">Free estimates</li>
+            <li data-i18n="trust.spanish">Se habla español</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="slide slide-xmas" data-until="2026-11-16" aria-roledescription="slide">
+        <div class="slide-bg" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1470938017644-581bd9737a31?auto=format&fit=crop&w=1920&q=70')"></div>
+        <div class="wrap hero-inner">
+          <p class="promo-badge"><span>15% OFF</span> <span data-i18n="xmas.badge2">Until November 15</span></p>
+          <h2 class="h1" data-i18n="xmas.title2">Light up your home this season</h2>
+          <p class="lead" data-i18n="xmas.lead2">Clean, professional roofline lighting by a local crew. Reserve your date early — the best spots fill up fast.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-accent" href="#contact" data-service="xmas" data-i18n="xmas.cta2">Reserve my date</a>
+            <a class="btn btn-ghost" href="sms:+14056136405" data-i18n="cta.text">Text us</a>
+          </div>
+        </div>
+      </article>
+
     </div>
-    <div class="wrap hero-inner">
-      <p class="eyebrow" data-i18n="hero.eyebrow">Oklahoma City · Landscape &amp; Concrete</p>
-      <h1 data-i18n="hero.title">Let's beautify your space together</h1>
-      <p class="lead" data-i18n="hero.lead">Expert landscaping, lawn care, concrete and tree services — done on time, with quality craftsmanship and honest prices.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-accent" href="#contact" data-i18n="cta.estimate">Get a free estimate</a>
-        <a class="btn btn-ghost" href="sms:+14056136405" data-i18n="cta.text">Text us</a>
-      </div>
-      <ul class="trust">
-        <li><strong>5.0 ★</strong> <span data-i18n="trust.google">17 Google reviews</span></li>
-        <li data-i18n="trust.free">Free estimates</li>
-        <li data-i18n="trust.spanish">Se habla español</li>
-      </ul>
+    <div class="slider-ui">
+      <button class="slider-arrow prev" type="button" aria-label="Previous slide">‹</button>
+      <div class="slider-dots" role="tablist" aria-label="Choose slide"></div>
+      <button class="slider-arrow next" type="button" aria-label="Next slide">›</button>
     </div>
   </section>
 
@@ -187,7 +223,7 @@
           <li><span data-i18n="contact.phone">Phone / Text</span> <a href="tel:+14056136405">405-613-6405</a></li>
           <li><span>Email</span> <a href="mailto:Mathewservicesllc@gmail.com">Mathewservicesllc@gmail.com</a></li>
           <li><span data-i18n="contact.area">Service area</span> <strong data-i18n="contact.areaVal">Oklahoma City + 20 miles</strong></li>
-          <li><span data-i18n="contact.hours">Hours</span> <strong data-i18n="contact.hoursVal">Mon–Fri 7 AM–6:30 PM · Sat 7 AM–3:30 PM</strong></li>
+          <li><span data-i18n="contact.hours">Hours</span> <strong data-i18n="contact.hoursVal">Mon–Fri 7 AM–5 PM</strong></li>
         </ul>
         <p class="cities"><span data-i18n="contact.cities">We serve:</span> Oklahoma City, Edmond, Moore, Norman, Midwest City, Del City, Yukon, Mustang, Bethany, Warr Acres, Nichols Hills, The Village, Choctaw.</p>
         <div class="contact-buttons">
@@ -211,6 +247,7 @@
             <option data-i18n="s.trees.t">Tree services</option>
             <option data-i18n="s.fences.t">Fences</option>
             <option data-i18n="s.drains.t">French drains &amp; sprinklers</option>
+            <option value="Christmas lights" data-i18n="form.xmas">Christmas lights (15% off until Nov 15)</option>
             <option data-i18n="form.other">Other</option>
           </select>
         </label>
