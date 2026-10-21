@@ -52,7 +52,7 @@ const I18N = {
     "contact.areaVal": "Oklahoma City + 20 millas",
     "contact.cities": "Atendemos:",
     "contact.hours": "Horario",
-    "contact.hoursVal": "Lun–Vie 7 AM–5 PM",
+    "contact.hoursVal": "Lun–Vie 7 AM–5 PM · Sáb con cita",
     "reviews.more": "Ver todas las reseñas en Google",
     "thanks.title": "¡Gracias! Recibimos tu solicitud",
     "thanks.lead": "Te contactaremos muy pronto. Si es urgente, llámanos o mándanos un texto.",
